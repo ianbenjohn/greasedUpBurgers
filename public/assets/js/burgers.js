@@ -1,7 +1,6 @@
 $(function() {
     $(".devour_btn").on("click", function(event) {
         const id = $(this).data("burgerid");
-
         $.ajax("/api/burger/" + id, {
             type: "PUT"
         }).then(function() {
