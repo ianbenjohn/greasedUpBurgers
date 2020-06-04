@@ -1,3 +1,3 @@
-INSERT INTO burgers(burger_name) values('Big Greased up McCheese');
-INSERT INTO burgers(burger_name) values('Sickening Greased Chicken McBurger');
-INSERT INTO burgers(burger_name) values('Filthed Up Greased McGrease Burger');
+INSERT INTO burgers(burger_name, devoured) values('Big Greased up McCheese', FALSE);
+INSERT INTO burgers(burger_name, devoured) values('Sickening Greased Chicken McBurger', FALSE);
+INSERT INTO burgers(burger_name, devoured) values('Filthed Up Greased McGrease Burger', FALSE);
