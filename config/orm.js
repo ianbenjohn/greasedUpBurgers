@@ -9,7 +9,7 @@ const orm = {
         })
     },
     insertOne: function(burgerNew, cb) {
-        const query = `insert into burgers(burger_name, devoured) values ('${burgerNew}, false)`;
+        const query = `insert into burgers(burger_name, devoured) values ('${burgerNew}', false)`;
         connection.query(query, function (err, res) {
             if (err) throw err;
             cb(res);

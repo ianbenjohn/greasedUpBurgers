@@ -20,6 +20,7 @@ $(function() {
             type: "POST",
             data: newBurger
         }).then(function() {
+            
             location.reload();
         });
     });
