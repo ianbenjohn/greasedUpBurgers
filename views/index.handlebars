@@ -3,5 +3,38 @@
         <h1 class="text-center">Eat the Greasy Burger</h1>
     </div>
 
-    
+    <div class="list">
+        <h1>List of Greased up Burgers</h1>
+            {{#each burgers}}
+                {{#unless devoured}}
+                    <div>
+                        {{burger_name}}
+                        <button data-burgerid="{{id}}" class="devour_btn" type="button">Eat this damned burger!!!</button>
+                    </div>
+                {{/unless}}
+            {{/each}}
+    </div>
+    <div class="devoured">
+        <h1>Burgers that have been destroyed:</h1>
+            {{#each burgers}}
+                {{#if devoured}}
+                        <p>{{burger_name}}</p>
+                {{/if}}
+            {{/each}}
+    </div>
+    <div class ="add">
+        <h2>Add a Burger</h2>
+            <form class="create-form">
+                <div class="form-group">
+                <input 
+                    type="text" 
+                    placeholder="Burger Name" 
+                    id="burger" 
+                    name="newBurger">
+                <button 
+                    type="submit">Add Burger
+                    </button>
+                </div>
+            </form>
+
 </div>
